@@ -136,16 +136,17 @@
         
         /*------------SOBRE MÍ---------*/
         #sobremi {
-            max-width: 1100px;
+            max-width: 1080px;
             margin: auto;
-            padding: 100px 15px;
+            padding: 50px 15px;
             color: #111135;
             display: flex;
         }
         
         #sobremi .contenedor-foto {
-            max-width: 400px;
-            margin-right: 80px;
+            max-width: 300px auto;
+            margin-right: 50px;
+            justify-content: center;
         }
         
         #sobremi .contenedor-foto img {
@@ -174,7 +175,7 @@
         }
         
         #sobremi .sobremi .titulo-seccion {
-            font-size: 22px;
+            font-size: 30px;
             text-transform: uppercase;
             color: #111135;
             text-decoration: underline;
@@ -183,7 +184,7 @@
         }
         
         #sobremi .sobremi h2 {
-            font-size: 34px;
+            font-size: 24px;
             font-weight: bold;
             margin: 20px 0;
             letter-spacing: 2px;
@@ -194,13 +195,13 @@
         }
 
         #sobremi .palabrasImportantes {
-            background-color: #ff5080;
+            background-color: #539ca9;
             color: white;
             font-size: medium;
         }
         
         #sobremi .palabrasImportantesBlack {
-            background-color: #000;
+            background-color: #413e3e;
             color: white;
             font-size: medium;
         }
@@ -208,15 +209,16 @@
 
         
         #sobremi .sobremi h3 {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 500;
             text-transform: uppercase;
             margin-bottom: 20px;
             letter-spacing: 1px;
+            
         }
         
         #sobremi .sobremi p {
-            font-size: 14px;
+            font-size: 18px;
             line-height: 25px;
             color: #565656;
             margin-bottom: 12px;
@@ -316,7 +318,7 @@
         /*--------HABILIDADES---------*/
         
         .contenedor-skills {
-            background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.8)), url("/6106991.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -351,41 +353,23 @@
             margin: 10px 0px;
         }
         
-        .contenedor-skills .skill .barra .barra-progreso1 {
-            background-color: #fff;
-            width: 95%;
-            height: 6px;
-            animation: progreso1 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso2 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso2 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso3 {
-            background-color: #fff;
-            width: 90%;
-            height: 6px;
-            animation: progreso3 2s forwards;
-        }
-        
-        .contenedor-skills .skill .barra .barra-progreso4 {
-            background-color: #fff;
-            width: 85%;
-            height: 6px;
-            animation: progreso4 2s forwards;
-        }
+          .contenedor-skills .skill .barra div {
+            height: 100%;
+            background-color: #4caf50;
+            transition: width 2s ease;
+            border-radius: 5px;
+          }
+          
+          #ciberseguridad { width: 85%; }
+          #seguridad      { width: 80%; }
+          #networking     { width: 80%; }
+          #cloud          { width: 80%; }
+          #hacking        { width: 75%; }
+          #auditoria      { width: 75%; }
+          #amenazas       { width: 75%; }
+          #soporte        { width: 80%; }
 
-        .contenedor-skills .skill .barra .barra-progreso5 {
-            background-color: #fff;
-            width: 85%;
-            height: 6px;
-            animation: progreso5 2s forwards;
-        }
-        
+          
         @keyframes progreso1 {
             0% {
                 width: 0;
@@ -480,7 +464,7 @@
             position: absolute;
             left: 0px;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #ff5080;
+            color: #2f1c21;
             width: 100%;
             padding: 10px;
             opacity: 0;
