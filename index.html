@@ -1,314 +1,391 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="estilo.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilo.css">
+  <title>Portfolio</title>
 </head>
-<script src="script.js"></script>
+
 <body>
-    <!-- SECCION I N I C I O --><section id="inicio">
-  <div class="contenido">
-    <header>
-      <div class="contenido-header">
-        <h1>Portafolio</h1>
+  <!-- SECCION INICIO -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1>Portafolio</h1>
 
-        <div class="redes">
-                        <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/andresgopimiento" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/andresgopimiento/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                    </div>
-
-        <!-- Ícono del menú hamburguesa -->
-        <i class="fa fa-bars" id="icono-nav" onclick="mostrarMenu()"></i>
-
-        <!-- Menú de navegación -->
-        <nav id="nav">
-          <ul id="links">
-            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
-            <li><a href="#insignias" onclick="seleccionar(this)">INSIGNIAS</a></li>
-            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-          </ul>
-        </nav>
-        
-      </div>
-    </header>
-
-         
-            
-  <div class="presentacion">
-                <h2 class="escribiendo">
-  <span id="texto-escribiendo"></span><span class="cursor">|</span>
-</h2>
-                <h2 class="escribiendoCargo">
-  <span id="texto-escribiendo-cargo"></span><span class="cursorCargo">|</span>
-</h2>
-            </div>
-    </section>
-
-    <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
-      
-        <div id="imagenPerfil">
-  <img id="fotoPerfil" src="yo.jpg" alt="Foto de perfil">
-</div>
-
-
-
-
-       <div class="sobremi">
-    <p class="titulo-seccion">Sobre Mi</p>
-    <h2>Apasionado por la <span>tecnología💡,</span><br> la <span>nube☁️</span> y la <span>ciberseguridad🔐</span></h2>
-    <h3 class="palabrasImportantesBlack">¿Cómo empezó mi camino en el mundo IT?</h3>
-    <p><span class="palabrasImportantes">Desde muy joven</span> sentí un profundo entusiasmo y curiosidad por la tecnología. Mi primera interacción fue con un videojuego: <span class="palabrasImportantesBlack">Super Mario World🍄</span> en una <span class="palabrasImportantesBlack">consola Super Nintendo🕹️</span> que mis padres me compraron con mucho esfuerzo.</p>
-    
-    <p>Con el tiempo, comencé a interesarme por cómo funcionaban los <span class="palabrasImportantesBlack">circuitos⚙️</span>, el <span class="palabrasImportantesBlack">software</span> y el <span class="palabrasImportantesBlack">hardware</span>. Aprendí por mi cuenta cómo operaban los dispositivos a mi alrededor, desde <span class="palabrasImportantesBlack">celulares📱</span> hasta <span class="palabrasImportantesBlack">computadoras💻</span>.</p>
-
-    <p>Mi curiosidad me llevó a explorar áreas como la <span class="palabrasImportantes">programación</span>, <span class="palabrasImportantes">bases de datos</span>, <span class="palabrasImportantes">ciberseguridad</span>, <span class="palabrasImportantes">redes</span> y <span class="palabrasImportantes">hacking ético</span>. Empecé a certificarme y a fortalecer mi perfil como un profesional <span class="palabrasImportantesBlack">autodidacta</span> y <span class="palabrasImportantesBlack">empírico</span> decidido a especializarse.</p>
-
-    <br>
-    <br>
-
-
-    <h3 class="palabrasImportantesBlack">¿Cómo inicié en el mundo laboral?</h3>
-    <p>Mi primera experiencia fue en <span class="palabrasImportantes">Soporte Técnico</span>, brindando soluciones a usuarios y empresas. Aprendí sobre <span class="palabrasImportantesBlack">redes LAN, WAN y MAN</span>, así como sobre protocolos como <span class="palabrasImportantesBlack">IPv4</span>, <span class="palabrasImportantesBlack">IPv6</span>, configuración de <span class="palabrasImportantesBlack">Wi-Fi</span>, <span class="palabrasImportantesBlack">HFC</span>, <span class="palabrasImportantesBlack">fibra óptica</span>, <span class="palabrasImportantesBlack">RECDO</span>, <span class="palabrasImportantesBlack">DMZ</span>, <span class="palabrasImportantesBlack">port forwarding</span> y bandas <span class="palabrasImportantesBlack">2.4GHz</span> y <span class="palabrasImportantesBlack">5GHz</span>. También me familiaricé con los modelos <span class="palabrasImportantes">OSI</span> y <span class="palabrasImportantes">TCP/IP</span>, aplicaciones <span class="palabrasImportantes">SaaS</span> y el <span class="palabrasImportantes">servicio al cliente</span>.</p>
-
-    <p><span class="palabrasImportantes">Sin embargo</span>, sabía que había algo más allá. Fue entonces cuando empecé a formarme en <span class="palabrasImportantes">Cloud Computing</span>, <span class="palabrasImportantes">Ciberseguridad</span> y <span class="palabrasImportantes">Hacking Ético</span>.</p>
-
-    <br>
-    <br>
-
-    <h3 class="palabrasImportantesBlack">Mi experiencia como Ingeniero de Nube Junior</h3>
-    <p>Mi segunda experiencia laboral fue como <span class="palabrasImportantes">Cloud Engineer Jr</span>, donde trabajé con la <span class="palabrasImportantesBlack">nube de Microsoft Azure☁️</span>. Me certifiqué en <span class="palabrasImportantesBlack">AZ-900</span> gracias al apoyo de la empresa en la que trabajé, la cual es <span class="palabrasImportantes">partner de Microsoft Latam</span>.</p>
-
-    <p>Durante un año, fui consultor implementando <span class="palabrasImportantes">soluciones cloud</span>, <span class="palabrasImportantes">arquitectura de redes</span> y <span class="palabrasImportantes">entornos seguros, accesibles y disponibles</span> para empresas del sector público y privado. También participé en la <span class="palabrasImportantesBlack">implementación de herramientas de seguridad en la nube</span>, <span class="palabrasImportantesBlack">monitoreo</span> y <span class="palabrasImportantesBlack">gestión de recursos en Azure</span>.</p>
-
-    <p>Entre mis funciones estaban la <span class="palabrasImportantes">configuración básica</span> de servicios, la <span class="palabrasImportantes">documentación de proyectos</span> y, sobre todo, el aprendizaje constante en herramientas y habilidades en la nube.</p>
-
-    <h3>¿Qué hago actualmente?</h3>
-    <p>Hoy en día, continúo mi camino en el mundo IT, <span class="palabrasImportantes">especializándome en Ciberseguridad en la Nube</span> de Azure, <span class="palabrasImportantes">profundizando en Hacking Ético</span> y <span class="palabrasImportantes">perfeccionando mi inglés</span> con el objetivo de convertirme en un profesional bilingüe.</p>
-
-    <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank" id="linkedin">
-  <i class="fab fa-linkedin"></i> Perfil LinkedIn
-</a>
-
-<a href="https://www.credly.com/users/andres-gomez-pimiento/badges#credly" target="_blank" id="credly">
-  <i class="fas fa-certificate"></i> Insignias Credly
-</a>
-
-<a href="https://drive.google.com/file/d/1ORGReaq-smPTABOllLBwotE8RasEJFt1/view?usp=sharing" target="_blank" id="credly">
-  <i class="fa-solid fa-file"></i> Hoja de vida
-</a>
-
-</div>
-
-    </section>
-
-    <!-- SECCION HABILIDADES --><section id="habilidades">
-  <h3 class="titulo-seccion">HABILIDADES</h3>
-  <div class="fila">
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-cloud"></i></span>
-      <h4>Cloud Computing</h4>
-      <hr>
-      <p>Implementación de soluciones en la nube con Azure: despliegue de aplicaciones, automatización, App Services y almacenamiento seguro.</p>
-    </div>
-
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-shield-halved"></i></span>
-      <h4>Ciberseguridad</h4>
-      <hr>
-      <p>Aplicación de buenas prácticas en seguridad informática, protección de datos, respuesta ante incidentes y concientización del usuario.</p>
-    </div>
-
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-user-ninja"></i></span>
-      <h4>Hacking Ético</h4>
-      <hr>
-      <p>Conocimientos en pentesting, análisis de vulnerabilidades, ingeniería social y pruebas de seguridad en aplicaciones web.</p>
-    </div>
-  </div>
-
-  <div class="fila">
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-database"></i></span>
-      <h4>Soporte TI</h4>
-      <hr>
-      <p>Resolución de incidencias, gestión de infraestructura tecnológica y soporte técnico para usuarios y equipos.</p>
-    </div>
-
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-network-wired"></i></span>
-      <h4>Networking</h4>
-      <hr>
-      <p>Conocimientos en redes LAN/WAN, configuración de routers y switches, protocolos TCP/IP, OSI y seguridad perimetral.</p>
-    </div>
-
-    <div class="habilidad">
-      <span class="icono"><i class="fa-solid fa-code"></i></span>
-      <h4>Programación</h4>
-      <hr>
-      <p>Desarrollo de aplicaciones con Java y Spring Boot, estructuras de datos, lógica de negocio y patrones de diseño.</p>
-    </div>
-  </div>
-</section>
-
-
-    <!-- SECCION DOMINIO -->
-   <div class="contenedor-skills" id="skills">
-  <h3>DOMINIO</h3>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Ciberseguridad</p>
-      <span class="porcentaje">85%</span>
-    </div>
-    <div class="barra">
-      <div id="ciberseguridad" class="progreso" style="--ancho: 85%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Seguridad Informática</p>
-      <span class="porcentaje">80%</span>
-    </div>
-    <div class="barra">
-      <div id="seguridad" class="progreso" style="--ancho: 80%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Networking (Redes)</p>
-      <span class="porcentaje">80%</span>
-    </div>
-    <div class="barra">
-      <div id="networking" class="progreso" style="--ancho: 80%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Cloud Computing (Azure)</p>
-      <span class="porcentaje">80%</span>
-    </div>
-    <div class="barra">
-      <div id="cloud" class="progreso" style="--ancho: 80%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Hacking Ético</p>
-      <span class="porcentaje">75%</span>
-    </div>
-    <div class="barra">
-      <div id="hacking" class="progreso" style="--ancho: 75%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Auditoría en Ciberseguridad</p>
-      <span class="porcentaje">75%</span>
-    </div>
-    <div class="barra">
-      <div id="auditoria" class="progreso" style="--ancho: 75%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Gestión de Amenazas</p>
-      <span class="porcentaje">75%</span>
-    </div>
-    <div class="barra">
-      <div id="amenazas" class="progreso" style="--ancho: 75%;"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <div class="info">
-      <p><span class="lista"></span>Soporte Técnico</p>
-      <span class="porcentaje">80%</span>
-    </div>
-    <div class="barra">
-      <div id="soporte" class="progreso" style="--ancho: 80%;"></div>
-    </div>
-  </div>
-</div>
-
-
-
-        
-
-    <!-- SECCION INSIGNIAS -->
-  <section id="insignias">
-  <h3 class="titulo-seccion">Insignias obtenidas</h3>
-  <div class="carrusel-insignias">
-    <div class="track">
-      <img src="/certificaciones/Introduction to Cybersecurity Cisco.png" alt="Introduction to Cybersecurity Cisco">
-      <img src="/certificaciones/CyberEssentials Cisco.png" alt="Cybersecurity Essentials Cisco">
-      <img src="/certificaciones/CCST Networking Cisco.png" alt="CCST Networking Cisco">
-      <img src="/certificaciones/CCNAENSA__1_.png" alt="CCNA Cisco">
-      <img src="/certificaciones/Cyber Threat Management.png" alt="Cyber Threat Management">
-      <img src="/certificaciones/Network Defense Cisco.png" alt="Network Defense">
-      <img src="/certificaciones/Endpoint Security Cisco.png" alt="Endpoint Security">
-      <img src="/certificaciones/Azure Fundamentals.png" alt="Azure Fundamentals">
-      <img src="/certificaciones/Ciberseguridad de Google Coursera.png" alt="Ciberseguridad de Google">
-      <img src="/certificaciones/Cybersecurity awareness Certiprof.png" alt="Cybersecurity Awareness">
-      <img src="/certificaciones/Cybersecurity awareness Certiprof 2.png" alt="Cybersecurity Awareness 2">
-      <img src="/certificaciones/Cloud Computing 101 AWS.png" alt="Cloud Computing AWS">
-      <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Universidad de Antioquia">
-      <img src="/certificaciones/Generation_Colombia_logo_NEW-BLUE.svg" width="200px" alt="Generation Colombia">
-      <img src="/certificaciones/Alura Latam + Oracle.png" alt="Insignia 2">
-      <img src="/certificaciones/Cybersecurity Analyst (UCSA) UCamp.png" alt="Cybersecurity Analyst Ucamp">
-      <img src="/certificaciones/Ethical Hacker Intermediate (UCSEH) UCamp.png" alt="Ethical Hacker Intermediate UCamp">
-      <img src="/certificaciones/Ethical Hacker (UEH) UCamp.png" alt="Ethical Hacker UCamp">
-      <img src="/certificaciones/Cyber Recon and Gathering (UCRG) UCamp.png" alt="Cyber Recon and Gathering UCamp">
-      <img src="/certificaciones/Social Engineering Fundamentals (USEF) UCmap.png" alt="Social Engineering Fundamentals UCamp">
-      <img src="/certificaciones/Cybersecurity audit UCamp.png" alt="Insignia 2">
-      <img src="/certificaciones/Cybersecurity Fundamentals UCcamp.png" alt="Cybersecurity Fundamentals UCamp">
-      <img src="/certificaciones/Generation Colombia.jpg" alt="Generation Colombia">
-      <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Insignia 2">
-      <img src="insignia2.png" alt="Insignia 2">
-
-    </div>
-  </div>
-</section>
-
-
-    <!-- SECCTION C O N T A C T O -->
-   <section id="contacto">
-  <h3 class="titulo-seccionContacto">Contáctame por WhatsApp</h3>
-
-  <div class="contenedor-whatsapp">
-    <a href="https://wa.me/573106307737" target="_blank" class="whatsapp-link">
-      <i class="fab fa-whatsapp"></i> +57 310 630 7737
-    </a>
-  </div>
-</section>
-
-
-    <!-- SECCION FOOTER -->
-    <footer>
-        <p>Todos los derechos reservados - 2022</p>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/andresgopimiento" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/andresgopimiento/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/andresgopimiento/" target="_blank"><i
+                class="fa-brands fa-instagram-square"></i></a>
+          </div>
+
+          <i class="fa fa-bars" id="icono-nav" onclick="mostrarMenu()"></i>
+
+          <nav id="nav">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+              <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+              <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+              <li><a href="#insignias" onclick="seleccionar(this)">INSIGNIAS</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-    </footer>
+      <div class="presentacion">
+        <h2 class="escribiendo">
+          <span id="texto-escribiendo"></span><span class="cursor">|</span>
+        </h2>
+        <h2 class="escribiendoCargo">
+          <span id="texto-escribiendo-cargo"></span><span class="cursorCargo">|</span>
+        </h2>
 
+        <a href="#sobremi">Conóceme más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION SOBRE MI -->
+  <section id="sobremi">
+    <div id="imagenPerfil">
+      <img id="fotoPerfil" src="yo.jpg" alt="Foto de perfil">
+    </div>
+
+    <div class="sobremi">
+      <p class="titulo-seccion">Sobre Mi</p>
+      <h2>Apasionado por la <span>tecnología💡,</span><br> la <span>nube☁️</span> y la <span>ciberseguridad🔐</span>
+      </h2>
+      <br>
+      <br>
+
+
+      <h3 class="palabrasImportantesBlack">¿Cómo empezó mi camino en el mundo IT?</h3>
+      <br>
+      <br>
+      <p><span class="palabrasImportantes">Desde muy joven</span> sentí un profundo entusiasmo y curiosidad por la
+        tecnología. Mi primera interacción fue con un videojuego: <span class="palabrasImportantesBlack">Super Mario
+          World🍄</span> en una <span class="palabrasImportantesBlack">consola Super Nintendo🕹️</span> que mis padres
+        me compraron con mucho esfuerzo.</p>
+
+      <p>Con el tiempo, comencé a interesarme por cómo funcionaban los <span
+          class="palabrasImportantesBlack">circuitos⚙️</span>, el <span class="palabrasImportantesBlack">software</span>
+        y el <span class="palabrasImportantesBlack">hardware</span>. Aprendí por mi cuenta cómo operaban los
+        dispositivos a mi alrededor, desde <span class="palabrasImportantesBlack">celulares📱</span> hasta <span
+          class="palabrasImportantesBlack">computadoras💻</span>.</p>
+
+      <p>Mi curiosidad me llevó a explorar áreas como la <span class="palabrasImportantes">programación</span>, <span
+          class="palabrasImportantes">bases de datos</span>, <span class="palabrasImportantes">ciberseguridad</span>,
+        <span class="palabrasImportantes">redes</span> y <span class="palabrasImportantes">hacking ético</span>. Empecé
+        a certificarme y a fortalecer mi perfil como un profesional <span
+          class="palabrasImportantesBlack">autodidacta</span> y <span class="palabrasImportantesBlack">empírico</span>
+        decidido a especializarse.
+      </p>
+      <img id="techSupport" class="imagenesGifs" src="/computer-cat.gif" alt="Aprendizaje empirico">
+
+
+      <br>
+      <br>
+
+
+      <h3 class="palabrasImportantesBlack">¿Cómo inicié en el mundo laboral?</h3>
+      <br>
+      <br>
+      <p>Mi primera experiencia fue en <span class="palabrasImportantes">Soporte Técnico</span>, brindando soluciones a
+        usuarios y empresas. Aprendí sobre <span class="palabrasImportantesBlack">redes LAN, WAN y MAN</span>, así como
+        sobre protocolos como <span class="palabrasImportantesBlack">IPv4</span>, <span
+          class="palabrasImportantesBlack">IPv6</span>, configuración de <span
+          class="palabrasImportantesBlack">Wi-Fi</span>, <span class="palabrasImportantesBlack">HFC</span>, <span
+          class="palabrasImportantesBlack">fibra óptica</span>, <span class="palabrasImportantesBlack">RECDO</span>,
+        <span class="palabrasImportantesBlack">DMZ</span>, <span class="palabrasImportantesBlack">port forwarding</span>
+        y bandas <span class="palabrasImportantesBlack">2.4GHz</span> y <span
+          class="palabrasImportantesBlack">5GHz</span>. También me familiaricé con los modelos <span
+          class="palabrasImportantes">OSI</span> y <span class="palabrasImportantes">TCP/IP</span>, aplicaciones <span
+          class="palabrasImportantes">SaaS</span> y el <span class="palabrasImportantes">servicio al cliente</span>.
+      </p>
+
+      <img id="techSupport" class="imagenesGifs" src="/tech support.gif" alt="Soporte técnico">
+
+      <p><span class="palabrasImportantes">Sin embargo</span>, sabía que había algo más allá. Fue entonces cuando empecé
+        a formarme en <span class="palabrasImportantes">Cloud Computing</span>, <span
+          class="palabrasImportantes">Ciberseguridad</span> y <span class="palabrasImportantes">Hacking Ético</span>.
+      </p>
+
+      <br>
+      <br>
+
+      <h3 class="palabrasImportantesBlack">Mi experiencia como Ingeniero de Nube Junior</h3>
+      <br>
+      <br>
+      <p>Mi segunda experiencia laboral fue como <span class="palabrasImportantes">Cloud Engineer Jr</span>, donde
+        trabajé con la <span class="palabrasImportantesBlack">nube de Microsoft Azure☁️</span>. Me certifiqué en <span
+          class="palabrasImportantesBlack">AZ-900</span> gracias al apoyo de la empresa en la que trabajé, la cual es
+        <span class="palabrasImportantes">partner de Microsoft Latam</span>.
+      </p>
+
+      <p>Durante un año, fui consultor implementando <span class="palabrasImportantes">soluciones cloud</span>, <span
+          class="palabrasImportantes">arquitectura de redes</span> y <span class="palabrasImportantes">entornos seguros,
+          accesibles y disponibles</span> para empresas del sector público y privado. También participé en la <span
+          class="palabrasImportantesBlack">implementación de herramientas de seguridad en la nube</span>, <span
+          class="palabrasImportantesBlack">monitoreo</span> y <span class="palabrasImportantesBlack">gestión de recursos
+          en Azure</span>.</p>
+
+          <img id="techSupport" class="imagenesGifs" src="/enginner.gif" alt="Cloud Enginner">
+
+      <p>Entre mis funciones estaban la <span class="palabrasImportantes">configuración básica</span> de servicios, la
+        <span class="palabrasImportantes">documentación de proyectos</span> y, sobre todo, el aprendizaje constante en
+        herramientas y habilidades en la nube.
+      </p>
+      <br>
+      <br>
+
+      <h3 class="palabrasImportantesBlack">¿Qué hago actualmente?</h3>
+      <br>
+      <br>
+      <p>Hoy en día, continúo mi camino en el mundo IT, <span class="palabrasImportantes">especializándome en
+          Ciberseguridad en la Nube</span> de Azure, <span class="palabrasImportantes">profundizando en Hacking
+          Ético</span> y <span class="palabrasImportantes">perfeccionando mi inglés</span> con el objetivo de
+        convertirme en un profesional bilingüe.</p>
+
+        <img id="techSupport" class="imagenesGifs" src="/homeless.gif" alt="homeless">
+        <br>
+
+        <h3 class="palabrasImportantesBlack">Acá abajo hay enlaces para más información personal y profesional.</h3>
+        <br>
+
+      <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank" id="linkedin">
+        <i class="fab fa-linkedin"></i> Perfil LinkedIn
+      </a>
+
+      <a href="https://www.credly.com/users/andres-gomez-pimiento/badges#credly" target="_blank" id="credly">
+        <i class="fas fa-certificate"></i> Insignias Credly
+      </a>
+
+      <a href="https://drive.google.com/file/d/1ORGReaq-smPTABOllLBwotE8RasEJFt1/view?usp=sharing" target="_blank"
+        id="credly">
+        <i class="fa-solid fa-file"></i> Hoja de vida
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- SECCION HABILIDADES -->
+  <section id="habilidades">
+    <h3 class="titulo-seccion">HABILIDADES</h3>
+    <div class="fila">
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-cloud"></i></span>
+        <h4>Cloud Computing</h4>
+        <hr>
+        <p>Implementación de soluciones en la nube con Azure: despliegue de aplicaciones, automatización, App Services y
+          almacenamiento seguro.</p>
+      </div>
+
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-shield-halved"></i></span>
+        <h4>Ciberseguridad</h4>
+        <hr>
+        <p>Aplicación de buenas prácticas en seguridad informática, protección de datos, respuesta ante incidentes y
+          concientización del usuario.</p>
+      </div>
+
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-user-ninja"></i></span>
+        <h4>Hacking Ético</h4>
+        <hr>
+        <p>Conocimientos en pentesting, análisis de vulnerabilidades, ingeniería social y pruebas de seguridad en
+          aplicaciones web.</p>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-database"></i></span>
+        <h4>Soporte TI</h4>
+        <hr>
+        <p>Resolución de incidencias, gestión de infraestructura tecnológica y soporte técnico para usuarios y equipos.
+        </p>
+      </div>
+
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-network-wired"></i></span>
+        <h4>Networking</h4>
+        <hr>
+        <p>Conocimientos en redes LAN/WAN, configuración de routers y switches, protocolos TCP/IP, OSI y seguridad
+          perimetral.</p>
+      </div>
+
+      <div class="habilidad">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Programación</h4>
+        <hr>
+        <p>Desarrollo de aplicaciones con Java y Spring Boot, estructuras de datos, lógica de negocio y patrones de
+          diseño.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECCION DOMINIO -->
+  <div class="contenedor-skills" id="skills">
+    <h3>DOMINIO</h3>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Ciberseguridad</p>
+        <span class="porcentaje">85%</span>
+      </div>
+      <div class="barra">
+        <div id="ciberseguridad" class="progreso" style="--ancho: 85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Seguridad Informática</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div id="seguridad" class="progreso" style="--ancho: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Networking (Redes)</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div id="networking" class="progreso" style="--ancho: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Cloud Computing (Azure)</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div id="cloud" class="progreso" style="--ancho: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Hacking Ético</p>
+        <span class="porcentaje">75%</span>
+      </div>
+      <div class="barra">
+        <div id="hacking" class="progreso" style="--ancho: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Auditoría en Ciberseguridad</p>
+        <span class="porcentaje">75%</span>
+      </div>
+      <div class="barra">
+        <div id="auditoria" class="progreso" style="--ancho: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Gestión de Amenazas</p>
+        <span class="porcentaje">75%</span>
+      </div>
+      <div class="barra">
+        <div id="amenazas" class="progreso" style="--ancho: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Soporte Técnico</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div id="soporte" class="progreso" style="--ancho: 80%;"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- SECCION INSIGNIAS -->
+  <section id="insignias">
+    <h3 class="titulo-seccion">Insignias obtenidas</h3>
+    <div class="carrusel-insignias">
+      <div class="track">
+        <img src="/certificaciones/Introduction to Cybersecurity Cisco.png" alt="Introduction to Cybersecurity Cisco">
+        <img src="/certificaciones/CyberEssentials Cisco.png" alt="Cybersecurity Essentials Cisco">
+        <img src="/certificaciones/CCST Networking Cisco.png" alt="CCST Networking Cisco">
+        <img src="/certificaciones/CCNAENSA__1_.png" alt="CCNA Cisco">
+        <img src="/certificaciones/Cyber Threat Management.png" alt="Cyber Threat Management">
+        <img src="/certificaciones/Network Defense Cisco.png" alt="Network Defense">
+        <img src="/certificaciones/Endpoint Security Cisco.png" alt="Endpoint Security">
+        <img src="/certificaciones/Azure Fundamentals.png" alt="Azure Fundamentals">
+        <img src="/certificaciones/Ciberseguridad de Google Coursera.png" alt="Ciberseguridad de Google">
+        <img src="/certificaciones/Cybersecurity awareness Certiprof.png" alt="Cybersecurity Awareness">
+        <img src="/certificaciones/Cybersecurity awareness Certiprof 2.png" alt="Cybersecurity Awareness 2">
+        <img src="/certificaciones/Cloud Computing 101 AWS.png" alt="Cloud Computing AWS">
+        <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Universidad de Antioquia">
+        <img src="/certificaciones/Generation_Colombia_logo_NEW-BLUE.svg" width="200px" alt="Generation Colombia">
+        <img src="/certificaciones/Alura Latam + Oracle.png" alt="Insignia 2">
+        <img src="/certificaciones/Cybersecurity Analyst (UCSA) UCamp.png" alt="Cybersecurity Analyst Ucamp">
+        <img src="/certificaciones/Ethical Hacker Intermediate (UCSEH) UCamp.png"
+          alt="Ethical Hacker Intermediate UCamp">
+        <img src="/certificaciones/Ethical Hacker (UEH) UCamp.png" alt="Ethical Hacker UCamp">
+        <img src="/certificaciones/Cyber Recon and Gathering (UCRG) UCamp.png" alt="Cyber Recon and Gathering UCamp">
+        <img src="/certificaciones/Social Engineering Fundamentals (USEF) UCmap.png"
+          alt="Social Engineering Fundamentals UCamp">
+        <img src="/certificaciones/Cybersecurity audit UCamp.png" alt="Insignia 2">
+        <img src="/certificaciones/Cybersecurity Fundamentals UCcamp.png" alt="Cybersecurity Fundamentals UCamp">
+        <img src="/certificaciones/Generation Colombia.jpg" alt="Generation Colombia">
+        <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Insignia 2">
+        <img src="insignia2.png" alt="Insignia 2">
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECCTION C O N T A C T O -->
+  <section id="contacto">
+    <h3 class="titulo-seccionContacto">Contáctame por WhatsApp</h3>
+
+    <div class="contenedor-whatsapp">
+      <a href="https://wa.me/573106307737" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i> +57 310 630 7737
+      </a>
+    </div>
+  </section>
+
+
+  <!-- SECCION FOOTER -->
+  <footer>
+    <p>Todos los derechos reservados - 2022</p>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/andresgopimiento" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/andresgopimiento/" target="_blank"><i
+          class="fa-brands fa-instagram-square"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

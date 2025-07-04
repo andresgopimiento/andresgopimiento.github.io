@@ -1,248 +1,252 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat';
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Montserrat';
         }
 
-        html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
 
 
-/*===============================
+        /*===============================
 =          SECCIÓN INICIO       =
 ===============================*/
-#inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background-tech.gif");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh; /* usa min-height en vez de height */
-  padding-top: 80px; /* evita que el contenido quede bajo el header */
-  position: relative;
-}
+        #inicio {
+          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background-tech.gif");
+          background-size: cover;
+          background-position: center;
+          min-height: 100vh;
+          /* usa min-height en vez de height */
+          padding-top: 80px;
+          /* evita que el contenido quede bajo el header */
+          position: relative;
+        }
 
 
-#inicio .contenido header {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-  
-}
+        #inicio .contenido header {
+          background-color: rgba(0, 0, 0, 0.8);
+          position: fixed;
+          width: 100%;
+          z-index: 100;
+          top: 0;
 
-#inicio .contenido header nav {
-  position: relative;
-  z-index: 101; /* mayor que 100 del header */
-}
+        }
 
-
-#inicio .contenido header .contenido-header {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  flex-wrap: wrap;
-}
-
-#inicio .contenido header .contenido-header h1 {
-  text-align: center;
-  color: #ff5080;
-}
-
-#inicio .contenido header .contenido-header nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-#inicio .contenido header .contenido-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
-  transition: 0.5s;
-}
-
-#inicio .contenido header .contenido-header nav ul li a:hover,
-#inicio .contenido header .contenido-header .seleccionado {
-  color: #ff5080;
-}
-
-#inicio .contenido header .contenido-header .redes a {
-  text-decoration: none;
-  color: #fff;
-  margin-left: 10px;
-  transition: 0.5s;
-}
-
-#inicio .contenido header .contenido-header .redes a:hover {
-  color: #ff5080;
-}
-
-#icono-nav {
-  color: #fff;
-  display: none;
-}
+        #inicio .contenido header nav {
+          position: relative;
+          z-index: 101;
+          /* mayor que 100 del header */
+        }
 
 
-@media screen and (max-width: 768px) {
-  nav {
-    display: none;
-  }
+        #inicio .contenido header .contenido-header {
+          max-width: 1100px;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          flex-wrap: wrap;
+        }
 
-  nav.responsive {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 60px; /* ajusta según el alto de tu header */
-    width: 100%;
-    left: 0;
-    padding: 10px 0;
-    z-index: 101;
-  }
+        #inicio .contenido header .contenido-header h1 {
+          text-align: center;
+          color: #ff5080;
+        }
 
-  nav.responsive ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
+        #inicio .contenido header .contenido-header nav ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
 
-  #icono-nav {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-  }
-}
+        #inicio .contenido header .contenido-header nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 400;
+          transition: 0.5s;
+        }
+
+        #inicio .contenido header .contenido-header nav ul li a:hover,
+        #inicio .contenido header .contenido-header .seleccionado {
+          color: #ff5080;
+        }
+
+        #inicio .contenido header .contenido-header .redes a {
+          text-decoration: none;
+          color: #fff;
+          margin-left: 10px;
+          transition: 0.5s;
+        }
+
+        #inicio .contenido header .contenido-header .redes a:hover {
+          color: #ff5080;
+        }
+
+        #icono-nav {
+          color: #fff;
+          display: none;
+        }
+
+
+        @media screen and (max-width: 768px) {
+          nav {
+            display: none;
+          }
+
+          nav.responsive {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.95);
+            position: absolute;
+            top: 60px;
+            /* ajusta según el alto de tu header */
+            width: 100%;
+            left: 0;
+            padding: 10px 0;
+            z-index: 101;
+          }
+
+          nav.responsive ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+          }
+
+          #icono-nav {
+            display: block;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+          }
+        }
 
 
 
-/*===============================
+        /*===============================
 =        PRESENTACIÓN INICIO    =
 ===============================*/
 
-#inicio .contenido .presentacion {
-  max-width: 100%;
-  min-height: calc(100vh - 80px);
-  padding: 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  animation: fadeIn 1.2s ease-out both;
-}
+        #inicio .contenido .presentacion {
+          max-width: 100%;
+          min-height: calc(100vh - 80px);
+          padding: 20px;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          animation: fadeIn 1.2s ease-out both;
+        }
 
 
-#inicio .contenido .presentacion h2 {
-  font-size: 35px;
-  margin-bottom: 15px;
-}
+        #inicio .contenido .presentacion h2 {
+          font-size: 35px;
+          margin-bottom: 15px;
+        }
 
-#inicio .contenido .presentacion .descripcion {
-  max-width: 700px;
-  font-size: 20px;
-  background-color: #338261;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 25px auto;
-}
 
-#inicio .contenido .presentacion a {
-  text-decoration: none;
-  display: inline-block;
-  margin: 25px;
-  padding: 20px 25px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
+        #inicio .contenido .presentacion a {
+          text-decoration: none;
+          display: inline-block;
+          margin: 25px;
+          padding: 20px 25px;
+          border: 2px solid #fff;
+          border-radius: 50px;
+          color: #fff;
+          font-weight: bold;
+          text-transform: uppercase;
+          transition: 0.5s;
+        }
 
-#inicio .contenido .presentacion a:hover {
-  background-color: #ff5080;
-  border-color: #ff5080;
-}
+        #inicio .contenido .presentacion a:hover {
+          background-color: #ff5080;
+          border-color: #ff5080;
+        }
 
-/*===============================
+        /*===============================
 =     EFECTO MÁQUINA DE ESCRIBIR =
 ===============================*/
 
-.escribiendo,
-.escribiendoCargo {
-  font-weight: bold;
-  text-align: center;
-  border-right: 0.15em solid;
-  max-width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: normal;
-  word-break: break-word;
-}
+        .escribiendo,
+        .escribiendoCargo {
+          font-weight: bold;
+          text-align: center;
+          border-right: 0.15em solid;
+          max-width: 90%;
+          margin: 0 auto;
+          overflow: hidden;
+          white-space: normal;
+          word-break: break-word;
+        }
 
-.escribiendo {
-  font-size: 24px;
-  border-color: #ff5080;
-  color: #ff5080;
-}
+        .escribiendo {
+          font-size: 24px;
+          border-color: #ff5080;
+          color: #ff5080;
+        }
 
-#texto-escribiendo-cargo {
-  font-size: 25px;
-  border-color: #1ef10b;
-  color: #02fd66;
-  background-color: #656363;
-}
+        #texto-escribiendo-cargo {
+          font-size: 25px;
+          border-color: #1ef10b;
+          color: #02fd66;
+          background-color: #656363;
+        }
 
-/* Cursores parpadeantes */
-.cursor {
-  display: inline-block;
-  animation: blink 0.8s steps(1) infinite;
-  color: #ff5080;
-  font-weight: bold;
-  font-size: 1em;
-}
+        /* Cursores parpadeantes */
+        .cursor {
+          display: inline-block;
+          animation: blink 0.8s steps(1) infinite;
+          color: #ff5080;
+          font-weight: bold;
+          font-size: 1em;
+        }
 
-.cursorCargo {
-  display: inline-block;
-  animation: blink 0.8s steps(1) infinite;
-  color: #1faf12;
-  font-weight: bold;
-  font-size: 1em;
-}
+        .cursorCargo {
+          display: inline-block;
+          animation: blink 0.8s steps(1) infinite;
+          color: #1faf12;
+          font-weight: bold;
+          font-size: 1em;
+        }
 
-/* Parpadeo del cursor */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
+        /* Parpadeo del cursor */
+        @keyframes blink {
 
-/* 📱 Adaptación para pantallas pequeñas */
-@media screen and (max-width: 480px) {
-  .escribiendo {
-    font-size: 20px;
-  }
+          0%,
+          100% {
+            opacity: 1;
+          }
 
-  #texto-escribiendo-cargo {
-    font-size: 18px;
-  }
+          50% {
+            opacity: 0;
+          }
+        }
 
-  .cursor,
-  .cursorCargo {
-    font-size: 0.9em;
-  }
-}
+        /* 📱 Adaptación para pantallas pequeñas */
+        @media screen and (max-width: 480px) {
+          .escribiendo {
+            font-size: 20px;
+          }
+
+          #texto-escribiendo-cargo {
+            font-size: 18px;
+          }
+
+          .cursor,
+          .cursorCargo {
+            font-size: 0.9em;
+          }
+        }
 
 
 
@@ -250,491 +254,551 @@
 
         /*------------SOBRE MÍ---------*/
         #sobremi {
-            max-width: 1080px;
-            margin: auto;
-            padding: 50px 15px;
-            color: #111135;
-            display: flex;
+          max-width: 1080px;
+          margin: auto;
+          padding: 50px 15px;
+          color: #111135;
+          display: flex;
         }
-        
-.contenedor-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  max-width: 300px;
+
+        .contenedor-foto {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          max-width: 300px;
+        }
+
+        #imagenPerfil {
+          width: 100%;
+          max-width: 300px;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          border: 5px dashed #111135;
+          background-image: url('background-perfil.gif');
+          background-size: cover;
+          background-position: center;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.4s ease-in-out;
+          overflow: hidden;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #imagenPerfil:hover {
+          transform: scale(1.05);
+          background-image: url('colors.gif');
+        }
+
+        #fotoPerfil {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+          transition: opacity 0.5s ease;
+        }
+
+
+
+        /* CONTENEDOR PRINCIPAL */
+#sobremi .sobremi {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1100px;
 }
 
-#imagenPerfil {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  border: 5px dashed #111135;
-  background-image: url('background-perfil.gif');
-  background-size: cover;
-  background-position: center;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.4s ease-in-out;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-#imagenPerfil:hover {
-  transform: scale(1.05);
-  background-image: url('colors.gif');
-}
-
-#fotoPerfil {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: opacity 0.5s ease;
-}
-
-
-
-        #sobremi .sobremi {
-            margin: 0 40px;
-        }
-        
-        #sobremi .sobremi .titulo-seccion {
-            font-size: 30px;
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
-        }
-        
-        #sobremi .sobremi h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-            letter-spacing: 2px;
-        }
-        
-        #sobremi .sobremi h2 span {
-            color: #ff5080;
-        }
-
-        #sobremi .palabrasImportantes {
-            background-color: #539ca9;
-            color: white;
-            font-size: medium;
-        }
-        
-        #sobremi .palabrasImportantesBlack {
-            background-color: #413e3e;
-            color: white;
-            font-size: medium;
-        }
-        
-
-        
-        #sobremi .sobremi h3 {
-            font-size: 15px;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-            
-        }
-        
-        #sobremi .sobremi p {
-            font-size: 18px;
-            line-height: 25px;
-            color: #565656;
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-        
-        #sobremi .sobremi a {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            border-radius: 30px;
-            border: 1px solid #000;
-            padding: 10px 20px;
-            margin-top: 30px;
-            transition: .1s;
-        }
-        
-        #sobremi .sobremi a:hover {
-            background-color: #ff5080;
-            color: #fff;
-        }
-        
-        /*--------HABILIDADES---------*/
-        
-        #habilidades {
-            padding: 100px 15px;
-            text-align: center;
-            background-color: #f3f3f3;
-        }
-        
-        #habilidades .titulo-seccion {
-            text-align: center;
-            font-size: 22px;
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
-        }
-        
-        #habilidades .fila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1150px;
-    margin: 30px auto;
-}
-
-
-        
-       /* Animación fade-up */
-.habilidad {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s, background-color 0.3s;
-  background-color: #fff;
-  padding: 30px;
-  margin: 0 5px;
-  border-radius: 8px;
-  max-width: 350px;
-}
-
-/* Cuando entra en pantalla */
-.habilidad.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Efecto hover SOLO en pantallas grandes */
-@media (hover: hover) and (pointer: fine) {
-  .habilidad:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-8px);
-    background: linear-gradient(145deg, #f2f2f2, #e0e0e0);
-  }
-}
-
-
-
-        
-.habilidad .icono {
-    margin: 0 auto 25px;
-    font-size: 24px;
-    line-height: 60px;
-    text-align: center;
-    color: #111135;
-}
-
-        
-        #habilidades .fila .habilidad h4 {
-            font-size: 22px;
-            margin-bottom: 25px;
-        }
-        
-        #habilidades .fila .habilidad hr {
-            width: 30%;
-            margin: auto;
-            color: #000;
-            margin-bottom: 25px;
-        }
-        
-        #habilidades .fila .habilidad ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
-        }
-        
-        #habilidades .fila .habilidad p {
-            font-size: 14px;
-            line-height: 22px;
-        }
-        
-        
-        
-        /*--------HABILIDADES---------*/
-
-
- .contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("/6106991.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.contenedor-skills h3 {
-  font-size: 28px;
-  margin-bottom: 30px;
+/* TÍTULOS */
+#sobremi .sobremi .titulo-seccion {
+  font-size: 36px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: 3px solid #fff;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.contenedor-skills .skill {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.contenedor-skills .skill .info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-}
-
-.contenedor-skills .skill .lista {
-  display: inline-block;
-  margin-right: 10px;
-  height: 10px;
-  width: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.contenedor-skills .skill .barra {
-  background-color: #919191;
-  width: 100%;
-  height: 6px;
-  margin: 10px 0;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-/* Por defecto: ancho 0 */
-.progreso {
-  width: 0;
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 5px;
-  transition: width 2s ease-in-out;
-}
-
-/* Se activa con JS */
-.progreso.animado {
-  width: var(--ancho);
-}
-
-/* Opcional: animación fade-in para la sección */
-.contenedor-skills {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.contenedor-skills.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.progreso {
-  width: 0;
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 5px;
-  transition: width 2s ease-in-out;
-}
-
-.progreso.animado {
-  width: var(--ancho);
-}
-
-
-
-/*--------INSIGNIAS OBTENIDAS--------*/
-
-#insignias {
-  background-color: #f3f3f3;
-  padding: 20px;
-  text-align: center;
-  overflow: hidden;
-}
-
-#insignias .titulo-seccion {
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
   color: #111135;
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
+  margin-bottom: 20px;
 }
 
-.carrusel-insignias {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+#sobremi .sobremi h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
 }
 
-.track {
+#sobremi .sobremi h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
+  letter-spacing: 1px;
+}
+
+/* PÁRRAFOS */
+#sobremi .sobremi p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* ETIQUETAS DE COLOR */
+#sobremi .palabrasImportantes,
+#sobremi .palabrasImportantesBlack {
+  display: inline;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: inherit;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+}
+
+#sobremi .palabrasImportantes {
+  background-color: #539ca9;
+  color: white;
+}
+
+#sobremi .palabrasImportantesBlack {
+  background-color: #413e3e;
+  color: white;
+}
+
+/* BOTONES/ENLACES */
+#sobremi .sobremi a {
   display: inline-block;
-  white-space: nowrap;
-  animation: moverIzquierda 18s linear infinite;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 12px 24px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
-.carrusel-insignias:hover .track {
-  animation-play-state: paused; /* ⏸️ pausa con hover */
+#sobremi .sobremi a:hover {
+  background-color: #ff5080;
+  color: #fff;
+  border-color: #ff5080;
 }
 
-.track img {
-  height: 200px;
-  margin: 40px 20px;
-  vertical-align: middle;
+/* IMÁGENES */
+.imagenesGifs {
+  display: block;
+  margin: 25px auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
-.track img:hover {
-  transform: scale(1.1);
-  z-index: 2;
+.imagenesGifs:hover {
+  transform: scale(1.03);
 }
 
-@keyframes moverIzquierda {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Responsive: imágenes más grandes en celular */
+/* RESPONSIVE PARA MÓVIL */
 @media screen and (max-width: 768px) {
-  .track img {
-    padding: 20px;
-    margin-top: 40px;
-    height: 180px;
-    margin: 0 15px;
+  #sobremi .sobremi {
+    padding: 0 15px;
   }
 
-  .track {
-    animation-duration: 10s;
-  }
-}
-
-
-
-
-
-
-       
-        
-/*--------CONTACTO---------*/
-        
-    #contacto {
-            padding: 100px 15px;
-            background-color: #f3f3f3;
-        }
-        
-        #contacto .titulo-seccion {
-            margin-bottom: 20px;
-        }
-        
-    .contenedor-whatsapp {
-        text-align: center;
-        margin-top: 20px;
-}
-
-.titulo-seccionContacto {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 10px 20px;
-}
-
-
-.contenedor-whatsapp {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.whatsapp-link {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
+  #sobremi .sobremi p {
     font-size: 16px;
-    transition: background-color 0.3s ease;
-}  
+  }
 
-.whatsapp-link i {
-    margin-right: 10px;
+  .imagenesGifs {
+    max-width: 90%;
+  }
+
+  #sobremi .sobremi h2 {
+    font-size: 22px;
+  }
+
+  #sobremi .sobremi h3 {
     font-size: 18px;
-    vertical-align: middle;
+  }
 }
 
-.whatsapp-link:hover {
-    background-color: #1ebe5b;
-}
+
+#sobremi .sobremi h2 span {
+          color: #ff5080;
+        }
+
+        /*--------HABILIDADES---------*/
+
+        #habilidades {
+          padding: 100px 15px;
+          text-align: center;
+          background-color: #f3f3f3;
+        }
+
+        #habilidades .titulo-seccion {
+          text-align: center;
+          font-size: 22px;
+          text-transform: uppercase;
+          color: #111135;
+          text-decoration: underline;
+          text-decoration-color: #d3d3d3;
+          text-decoration-thickness: 5px;
+        }
+
+        #habilidades .fila {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          max-width: 1150px;
+          margin: 30px auto;
+        }
+
+
+
+        /* Animación fade-up */
+        .habilidad {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s, background-color 0.3s;
+          background-color: #fff;
+          padding: 30px;
+          margin: 0 5px;
+          border-radius: 8px;
+          max-width: 350px;
+        }
+
+        /* Cuando entra en pantalla */
+        .habilidad.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* Efecto hover SOLO en pantallas grandes */
+        @media (hover: hover) and (pointer: fine) {
+          .habilidad:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+            background: linear-gradient(145deg, #f2f2f2, #e0e0e0);
+          }
+        }
+
+
+
+
+        .habilidad .icono {
+          margin: 0 auto 25px;
+          font-size: 24px;
+          line-height: 60px;
+          text-align: center;
+          color: #111135;
+        }
+
+
+        #habilidades .fila .habilidad h4 {
+          font-size: 22px;
+          margin-bottom: 25px;
+        }
+
+        #habilidades .fila .habilidad hr {
+          width: 30%;
+          margin: auto;
+          color: #000;
+          margin-bottom: 25px;
+        }
+
+        #habilidades .fila .habilidad ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 10px;
+        }
+
+        #habilidades .fila .habilidad p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+
+
+        /*--------HABILIDADES---------*/
+
+
+        .contenedor-skills {
+          background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("/6106991.jpg");
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          color: #fff;
+          padding: 40px 20px;
+          text-align: center;
+        }
+
+        .contenedor-skills h3 {
+          font-size: 28px;
+          margin-bottom: 30px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          border-bottom: 3px solid #fff;
+          display: inline-block;
+          padding-bottom: 10px;
+        }
+
+        .contenedor-skills .skill {
+          max-width: 600px;
+          margin: 30px auto;
+        }
+
+        .contenedor-skills .skill .info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+        }
+
+        .contenedor-skills .skill .lista {
+          display: inline-block;
+          margin-right: 10px;
+          height: 10px;
+          width: 10px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+
+        .contenedor-skills .skill .barra {
+          background-color: #919191;
+          width: 100%;
+          height: 6px;
+          margin: 10px 0;
+          border-radius: 3px;
+          overflow: hidden;
+        }
+
+        /* Por defecto: ancho 0 */
+        .progreso {
+          width: 0;
+          height: 100%;
+          background-color: #4caf50;
+          border-radius: 5px;
+          transition: width 2s ease-in-out;
+        }
+
+        /* Se activa con JS */
+        .progreso.animado {
+          width: var(--ancho);
+        }
+
+        /* Opcional: animación fade-in para la sección */
+        .contenedor-skills {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .contenedor-skills.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+
+        .progreso {
+          width: 0;
+          height: 100%;
+          background-color: #4caf50;
+          border-radius: 5px;
+          transition: width 2s ease-in-out;
+        }
+
+        .progreso.animado {
+          width: var(--ancho);
+        }
+
+
+
+        /*--------INSIGNIAS OBTENIDAS--------*/
+
+        #insignias {
+          background-color: #f3f3f3;
+          padding: 20px;
+          text-align: center;
+          overflow: hidden;
+        }
+
+        #insignias .titulo-seccion {
+          font-size: 24px;
+          text-transform: uppercase;
+          margin-bottom: 40px;
+          color: #111135;
+          text-decoration: underline;
+          text-decoration-color: #d3d3d3;
+          text-decoration-thickness: 5px;
+        }
+
+        .carrusel-insignias {
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+        }
+
+        .track {
+          display: inline-block;
+          white-space: nowrap;
+          animation: moverIzquierda 18s linear infinite;
+        }
+
+        .carrusel-insignias:hover .track {
+          animation-play-state: paused;
+          /* ⏸️ pausa con hover */
+        }
+
+        .track img {
+          height: 200px;
+          margin: 40px 20px;
+          vertical-align: middle;
+          transition: transform 0.3s ease;
+        }
+
+        .track img:hover {
+          transform: scale(1.1);
+          z-index: 2;
+        }
+
+        @keyframes moverIzquierda {
+          0% {
+            transform: translateX(0);
+          }
+
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        /* Responsive: imágenes más grandes en celular */
+        @media screen and (max-width: 768px) {
+          .track img {
+            padding: 20px;
+            margin-top: 40px;
+            height: 180px;
+            margin: 0 15px;
+          }
+
+          .track {
+            animation-duration: 10s;
+          }
+        }
+
+
+
+
+
+
+
+
+        /*--------CONTACTO---------*/
+
+        #contacto {
+          padding: 100px 15px;
+          background-color: #f3f3f3;
+        }
+
+        #contacto .titulo-seccion {
+          margin-bottom: 20px;
+        }
+
+        .contenedor-whatsapp {
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .titulo-seccionContacto {
+          text-align: center;
+          font-weight: bold;
+          font-size: 24px;
+          padding: 10px 20px;
+        }
+
+
+        .contenedor-whatsapp {
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .whatsapp-link {
+          display: inline-block;
+          padding: 12px 20px;
+          background-color: #25D366;
+          color: white;
+          border-radius: 30px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-link i {
+          margin-right: 10px;
+          font-size: 18px;
+          vertical-align: middle;
+        }
+
+        .whatsapp-link:hover {
+          background-color: #1ebe5b;
+        }
 
 
         /*--------FOOTER---------*/
         footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 30px 0;
-            margin-bottom: 0;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          padding: 30px 0;
+          margin-bottom: 0;
         }
-        
+
         footer a {
-            text-decoration: none;
-            color: #fff;
-            display: inline-block;
-            margin: 5px;
-            font-size: 26px;
-            
+          text-decoration: none;
+          color: #fff;
+          display: inline-block;
+          margin: 5px;
+          font-size: 26px;
+
         }
+
         /* *********************/
         /* seccion R E S P O N S I V E */
         /* *********************/
-        
-/* Asegura que las filas tengan flex en pantallas grandes */
-#habilidades .fila,
-#portfolio .fila {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-/* Para la sección SOBRE MÍ */
-#sobremi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+        /* Asegura que las filas tengan flex en pantallas grandes */
+        #habilidades .fila,
+        #portfolio .fila {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
 
-/* Fade-in general */
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease forwards;
-}
+        /* Para la sección SOBRE MÍ */
+        #sobremi {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        /* Fade-in general */
+        section {
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
