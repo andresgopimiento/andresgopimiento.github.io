@@ -65,3 +65,37 @@
 
   window.addEventListener("scroll", animarSkills);
   window.addEventListener("load", animarSkills);
+
+
+  /*ESCRIBIENDO EFECTO*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const textos = [
+    { id: "texto-escribiendo", contenido: "Soy Andrés Gómez Pimiento", velocidad: 60 },
+    { id: "texto-escribiendo-cargo", contenido: "Cloud Enginner | Analista de Ciberseguridad y Hacking Ético | Programador Fullstack Java | Anlista SOC 1 | Soporte TI | ", velocidad: 50 }
+  ];
+
+  textos.forEach(({ id, contenido, velocidad }) => {
+    const contenedor = document.getElementById(id);
+    if (!contenedor) return;
+
+    let i = 0;
+    contenedor.textContent = ""; // Asegura que inicie vacío
+
+    function escribir() {
+      if (i < contenido.length) {
+        contenedor.textContent += contenido.charAt(i);
+        i++;
+        setTimeout(escribir, velocidad);
+      }
+    }
+
+    escribir();
+  });
+});
+
+
+function mostrarMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("responsive");
+}

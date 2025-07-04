@@ -12,42 +12,45 @@
 </head>
 <script src="script.js"></script>
 <body>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>Portafolio</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                        </ul>
-                    </nav>
+    <!-- SECCION I N I C I O --><section id="inicio">
+  <div class="contenido">
+    <header>
+      <div class="contenido-header">
+        <h1>Portafolio</h1>
 
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-
-                    <div class="redes">
+        <div class="redes">
                         <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/andresgopimiento" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/andresgopimiento/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
                     </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2><span>Soy Andrés Gómez Pimiento</span></h2>
-                <p class="descripcion">Cloud Enginner | Ciberseguridad y Hacking Ético | Soporte TI </p>
-                <a href="#portfolio">Ir a Portafolio</a>
+
+        <!-- Ícono del menú hamburguesa -->
+        <i class="fa fa-bars" id="icono-nav" onclick="mostrarMenu()"></i>
+
+        <!-- Menú de navegación -->
+        <nav id="nav">
+          <ul id="links">
+            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+            <li><a href="#insignias" onclick="seleccionar(this)">INSIGNIAS</a></li>
+            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+    </header>
+
+         
+            
+  <div class="presentacion">
+                <h2 class="escribiendo">
+  <span id="texto-escribiendo"></span><span class="cursor">|</span>
+</h2>
+                <h2 class="escribiendoCargo">
+  <span id="texto-escribiendo-cargo"></span><span class="cursorCargo">|</span>
+</h2>
             </div>
-        </div>
     </section>
 
     <!-- SECCION S O B R E M I -->
@@ -247,38 +250,41 @@
 
         
 
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="proyecto1.jpg" alt="">
-                <div class="info">
-                    <h4>Burpsuite</h4>
-                    <p>Escanear y monitorear método GET/POST</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="proyecto2.jpg" alt="">
-                <div class="info">
-                    <h4>OWASP ZAP</h4>
-                    <p>Cómo verificar si mi página es segura</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="proyecto3.jpg" alt="">
-                <div class="info">
-                    <h4>Rastreo</h4>
-                    <p>¿Mi información pública es vulnerable?</p>
-                </div>
-            </div>
-        </div>
-        
-        </div>
-    </section>
+    <!-- SECCION INSIGNIAS -->
+  <section id="insignias">
+  <h3 class="titulo-seccion">Insignias obtenidas</h3>
+  <div class="carrusel-insignias">
+    <div class="track">
+      <img src="/certificaciones/Introduction to Cybersecurity Cisco.png" alt="Introduction to Cybersecurity Cisco">
+      <img src="/certificaciones/CyberEssentials Cisco.png" alt="Cybersecurity Essentials Cisco">
+      <img src="/certificaciones/CCST Networking Cisco.png" alt="CCST Networking Cisco">
+      <img src="/certificaciones/CCNAENSA__1_.png" alt="CCNA Cisco">
+      <img src="/certificaciones/Cyber Threat Management.png" alt="Cyber Threat Management">
+      <img src="/certificaciones/Network Defense Cisco.png" alt="Network Defense">
+      <img src="/certificaciones/Endpoint Security Cisco.png" alt="Endpoint Security">
+      <img src="/certificaciones/Azure Fundamentals.png" alt="Azure Fundamentals">
+      <img src="/certificaciones/Ciberseguridad de Google Coursera.png" alt="Ciberseguridad de Google">
+      <img src="/certificaciones/Cybersecurity awareness Certiprof.png" alt="Cybersecurity Awareness">
+      <img src="/certificaciones/Cybersecurity awareness Certiprof 2.png" alt="Cybersecurity Awareness 2">
+      <img src="/certificaciones/Cloud Computing 101 AWS.png" alt="Cloud Computing AWS">
+      <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Universidad de Antioquia">
+      <img src="/certificaciones/Generation_Colombia_logo_NEW-BLUE.svg" width="200px" alt="Generation Colombia">
+      <img src="/certificaciones/Alura Latam + Oracle.png" alt="Insignia 2">
+      <img src="/certificaciones/Cybersecurity Analyst (UCSA) UCamp.png" alt="Cybersecurity Analyst Ucamp">
+      <img src="/certificaciones/Ethical Hacker Intermediate (UCSEH) UCamp.png" alt="Ethical Hacker Intermediate UCamp">
+      <img src="/certificaciones/Ethical Hacker (UEH) UCamp.png" alt="Ethical Hacker UCamp">
+      <img src="/certificaciones/Cyber Recon and Gathering (UCRG) UCamp.png" alt="Cyber Recon and Gathering UCamp">
+      <img src="/certificaciones/Social Engineering Fundamentals (USEF) UCmap.png" alt="Social Engineering Fundamentals UCamp">
+      <img src="/certificaciones/Cybersecurity audit UCamp.png" alt="Insignia 2">
+      <img src="/certificaciones/Cybersecurity Fundamentals UCcamp.png" alt="Cybersecurity Fundamentals UCamp">
+      <img src="/certificaciones/Generation Colombia.jpg" alt="Generation Colombia">
+      <img src="/certificaciones/Escudo-UdeA.svg.png" alt="Insignia 2">
+      <img src="insignia2.png" alt="Insignia 2">
+
+    </div>
+  </div>
+</section>
+
 
     <!-- SECCTION C O N T A C T O -->
    <section id="contacto">
