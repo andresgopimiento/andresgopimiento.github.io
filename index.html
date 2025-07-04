@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Portfolio</title>
 </head>
-
+<script src="script.js"></script>
 <body>
     <!-- SECCION I N I C I O -->
     <section id="inicio">
@@ -44,7 +44,7 @@
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
                 <h2><span>Soy Andrés Gómez Pimiento</span></h2>
-                <p class="descripcion">Desarrollador Fullstack Java | Back-end | Hacker Ético </p>
+                <p class="descripcion">Cloud Enginner | Ciberseguridad y Hacking Ético | Soporte TI </p>
                 <a href="#portfolio">Ir a Portafolio</a>
             </div>
         </div>
@@ -52,9 +52,14 @@
 
     <!-- SECCION S O B R E M I -->
     <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="yo.jpg" id="imagenPerfil" alt="Imagen de perfil">
-        </div>
+      
+        <div id="imagenPerfil">
+  <img id="fotoPerfil" src="yo.jpg" alt="Foto de perfil">
+</div>
+
+
+
+
        <div class="sobremi">
     <p class="titulo-seccion">Sobre Mi</p>
     <h2>Apasionado por la <span>tecnología💡,</span><br> la <span>nube☁️</span> y la <span>ciberseguridad🔐</span></h2>
@@ -87,7 +92,18 @@
     <h3>¿Qué hago actualmente?</h3>
     <p>Hoy en día, continúo mi camino en el mundo IT, <span class="palabrasImportantes">especializándome en Ciberseguridad en la Nube</span> de Azure, <span class="palabrasImportantes">profundizando en Hacking Ético</span> y <span class="palabrasImportantes">perfeccionando mi inglés</span> con el objetivo de convertirme en un profesional bilingüe.</p>
 
-    <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank" id="linkeada">Perfil LinkedIn</a>
+    <a href="https://www.linkedin.com/in/andresgopimiento/" target="_blank" id="linkedin">
+  <i class="fab fa-linkedin"></i> Perfil LinkedIn
+</a>
+
+<a href="https://www.credly.com/users/andres-gomez-pimiento/badges#credly" target="_blank" id="credly">
+  <i class="fas fa-certificate"></i> Insignias Credly
+</a>
+
+<a href="https://drive.google.com/file/d/1ORGReaq-smPTABOllLBwotE8RasEJFt1/view?usp=sharing" target="_blank" id="credly">
+  <i class="fa-solid fa-file"></i> Hoja de vida
+</a>
+
 </div>
 
     </section>
@@ -143,90 +159,90 @@
 
 
     <!-- SECCION DOMINIO -->
-    <div class="contenedor-skills" id="skills">
-        <h3>DOMINIO</h3>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Ciberseguridad</p>
-            <span class="porcentaje">85%</span>
-          </div>
-          <div class="barra">
-            <div id="ciberseguridad"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Seguridad Informática</p>
-            <span class="porcentaje">80%</span>
-          </div>
-          <div class="barra">
-            <div id="seguridad"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Networking (Redes)</p>
-            <span class="porcentaje">80%</span>
-          </div>
-          <div class="barra">
-            <div id="networking"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Cloud Computing (Azure)</p>
-            <span class="porcentaje">80%</span>
-          </div>
-          <div class="barra">
-            <div id="cloud"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Hacking Ético</p>
-            <span class="porcentaje">75%</span>
-          </div>
-          <div class="barra">
-            <div id="hacking"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Auditoría en Ciberseguridad</p>
-            <span class="porcentaje">75%</span>
-          </div>
-          <div class="barra">
-            <div id="auditoria"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Gestión de Amenazas</p>
-            <span class="porcentaje">75%</span>
-          </div>
-          <div class="barra">
-            <div id="amenazas"></div>
-          </div>
-        </div>
-      
-        <div class="skill">
-          <div class="info">
-            <p><span class="lista"></span>Soporte Técnico</p>
-            <span class="porcentaje">80%</span>
-          </div>
-          <div class="barra">
-            <div id="soporte"></div>
-          </div>
-        </div>
-      </div>
-      
+   <div class="contenedor-skills" id="skills">
+  <h3>DOMINIO</h3>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Ciberseguridad</p>
+      <span class="porcentaje">85%</span>
+    </div>
+    <div class="barra">
+      <div id="ciberseguridad" class="progreso" style="--ancho: 85%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Seguridad Informática</p>
+      <span class="porcentaje">80%</span>
+    </div>
+    <div class="barra">
+      <div id="seguridad" class="progreso" style="--ancho: 80%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Networking (Redes)</p>
+      <span class="porcentaje">80%</span>
+    </div>
+    <div class="barra">
+      <div id="networking" class="progreso" style="--ancho: 80%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Cloud Computing (Azure)</p>
+      <span class="porcentaje">80%</span>
+    </div>
+    <div class="barra">
+      <div id="cloud" class="progreso" style="--ancho: 80%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Hacking Ético</p>
+      <span class="porcentaje">75%</span>
+    </div>
+    <div class="barra">
+      <div id="hacking" class="progreso" style="--ancho: 75%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Auditoría en Ciberseguridad</p>
+      <span class="porcentaje">75%</span>
+    </div>
+    <div class="barra">
+      <div id="auditoria" class="progreso" style="--ancho: 75%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Gestión de Amenazas</p>
+      <span class="porcentaje">75%</span>
+    </div>
+    <div class="barra">
+      <div id="amenazas" class="progreso" style="--ancho: 75%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="info">
+      <p><span class="lista"></span>Soporte Técnico</p>
+      <span class="porcentaje">80%</span>
+    </div>
+    <div class="barra">
+      <div id="soporte" class="progreso" style="--ancho: 80%;"></div>
+    </div>
+  </div>
+</div>
+
 
 
         
@@ -265,25 +281,16 @@
     </section>
 
     <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
-        <div class="contenedor-form">
-            <form action="">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
-                </div>
-                <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
-                </div>
+   <section id="contacto">
+  <h3 class="titulo-seccionContacto">Contáctame por WhatsApp</h3>
 
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-            </form>
-        </div>
-    </section>
+  <div class="contenedor-whatsapp">
+    <a href="https://wa.me/573106307737" target="_blank" class="whatsapp-link">
+      <i class="fab fa-whatsapp"></i> +57 310 630 7737
+    </a>
+  </div>
+</section>
+
 
     <!-- SECCION FOOTER -->
     <footer>
@@ -296,7 +303,6 @@
 
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
